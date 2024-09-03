@@ -1,4 +1,4 @@
-import wh, { Box } from '@src/index';
+import jk, { Box } from '@src/index';
 
 /**
  * @param {(T) => boolean} primitiveFn Primitive function, when true, the item will be deleted
@@ -30,7 +30,7 @@ export const map = <T>(arr: Box<T>[], transformPc: (t: Box<T>, index:number) => 
  * @returns An array of boxed values
  */
 export const box = <T>(arr: T[]): Box<T>[] => {
-    return arr.map(wh.box);
+    return arr.map(jk.box);
 }
 
 
@@ -39,5 +39,5 @@ export const box = <T>(arr: T[]): Box<T>[] => {
  * @returns An array of unboxed values
  */
 export const unbox = <T>(arr: Box<T>[]): T[] => {
-    return arr.map(wh.unbox);
+    return arr.map(jk.unbox);
 }

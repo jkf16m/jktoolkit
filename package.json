@@ -1,5 +1,5 @@
 {
-  "name": "whtoolkit",
+  "name": "jktoolkit",
   "version": "1.0.0",
   "main": "dist/index",
   "exports":{
