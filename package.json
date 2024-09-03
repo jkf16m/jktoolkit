@@ -1,0 +1,25 @@
+{
+  "name": "whtoolkit",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "exports":{
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production tsup",
+    "build:dev": "cross-env NODE_ENV=development tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-istanbul": "^2.0.5",
+    "cross-env": "^7.0.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
