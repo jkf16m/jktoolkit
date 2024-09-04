@@ -41,3 +41,12 @@ export const box = <T>(arr: T[]): Box<T>[] => {
 export const unbox = <T>(arr: Box<T>[]): T[] => {
     return arr.map(jk.unbox);
 }
+
+/**
+ * @param {T[]} arr1 The first array to merge
+ * @param {T[]} arr2 The second array to merge
+ */
+export const merge = <T>(arr1: T[], arr2: T[]) => {
+    arr1.push(...arr2);
+    return arr1;
+}

@@ -1,6 +1,7 @@
 import * as obj from './lib/obj';
 import * as array from './lib/array';
 import * as result from './lib/result';
+import * as pipe from './lib/pipe';
 
 export type Box<T> = {
     v: T,
@@ -16,4 +17,5 @@ export default {
     box,
     unbox,
     result,
+    pipe,
 }
